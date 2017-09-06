@@ -2,7 +2,7 @@ from flask import Flask, request
 from pymongo import MongoClient
 
 app = Flask(__name__)
-cl = MongoClient("localhost:27017")
+cl = MongoClient("mongo:27017")
 db = cl["test"]
 dummy_number = 0
 
