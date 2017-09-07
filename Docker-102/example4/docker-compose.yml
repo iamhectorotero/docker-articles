@@ -1,0 +1,13 @@
+#docker-compose.yml
+version: '3'
+services:
+  db:
+    image: mongo:3.4.7
+  api:
+    build:
+      context: .
+      dockerfile: api_dockerfile
+  tests:
+    build:
+      context: .
+      dockerfile: tests_dockerfile
